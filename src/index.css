@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: grid;
+  place-items: center;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  width: 700px;
+  background-color: rgb(74, 74, 198);
+  border: 3px solid black;
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin: 2rem auto;
+}
+
+h2 {
+  background-color: black;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+h2.red {
+  color: red;
+}
+
+h2.yellow {
+  color: yellow;
+}
+
+ul {
+  display: grid;
+  place-items: center;
+}
+
+ul:hover {
+  cursor: pointer;
+  background-color: rgb(98, 136, 238);
+}
+
+ul li {
+  background: white;
+  width: 75px;
+  height: 75px;
+  list-style: none;
+  margin: 5px;
+  border-radius: 100%;
+  border: 3px solid black;
+}
+
+li.red {
+  background-color: red;
+}
+
+li.yellow {
+  background-color: yellow;
+}
+
+button {
+  display: block;
+  margin: 1rem auto;
+  padding: 1rem;
+  cursor: pointer;
+  background-color: rgb(2, 26, 8);
+  color: white;
+  font-size: 16px;
+}
